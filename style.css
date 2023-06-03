@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+}
+.background {
+  background: url("assets/bg.png") center/cover no-repeat;
+}
+.wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.header {
+  width: 80%;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: rgba(31, 31, 31, 0.6);
+  padding: 10px 50px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+.header__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.header__link:hover {
+  color: #cacaca;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.news {
+  margin-top: 75px;
+}
+
+.news__wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news__new {
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(31, 31, 31, 0.6);
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid lightslategray;
+}
+
+.news__name {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.news__descr {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.news__date {
+  margin-top: 15px;
+  color: #bfbfbf;
+}
+
+.news__button {
+  height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #c3c3c3;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.scripts {
+  margin-top: 75px;
+}
+.scripts__container {
+  display: grid;
+  width: 100%;
+  max-height: max-content;
+  /* background-color: red; */
+  row-gap: 80px;
+  column-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
+}
+.script {
+  padding: 10px;
+  height: 100%;
+  position: relative;
+}
+.script__title {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.script__descr {
+  color: #fff;
+  text-align: center;
+}
+.script__button {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 90%;
+  left: 50%;
+  bottom: 0;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid #c3c3c3;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.script__button:hover,
+.news__button:hover {
+  background-color: rgba(129, 129, 129, 1);
+}
+.script__aboutscript {
+  color: gray;
+  margin-bottom: 30px;
+}
+.script img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 70px;
+}
+
+.pluses {
+  margin-top: 70px;
+  padding: 10px;
+}
+.pluses__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 75%;
+  max-height: max-content;
+  margin-top: 60px;
+}
+.pluses__left,
+.pluses__right {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pluses__plus {
+  width: 400px;
+  height: 240px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.pluses__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.pluses__name {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.pluses__descr {
+  text-align: center;
+}
+
+.price {
+  padding-top: 120px;
+}
+
+.price__list {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.price__list img {
+  width: 700px;
+  height: 1000px;
+}
+
+.footer {
+  padding: 15px 30px;
+  width: 100%;
+  background-color: rgba(40, 40, 40, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.footer__name {
+  color: #ffffff;
+  margin-left: 10px;
+}
+.footer__name:hover {
+  text-decoration: underline;
+}
